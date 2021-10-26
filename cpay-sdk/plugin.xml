@@ -1,2 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-cpay-sdk" version="0.1.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>cpay-sdk</name><js-module name="cpay-sdk" src="www/cpay-sdk.js"><clobbers target="cordova.plugins.cpay-sdk" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="cpay-sdk"><param name="android-package" value="cordova-plugin-cpay-sdk.cpay-sdk" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/cpay-sdk.java" target-dir="src/cordova-plugin-cpay-sdk/cpay-sdk" /></platform></plugin>
+<plugin id="cordova-plugin-cpay-sdk" version="0.1.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cpay-sdk</name>
+    <js-module name="cpay-sdk" src="www/cpay-sdk.js">
+        <clobbers target="window.CpaySDK" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CpaySDK">
+                <param name="android-package" value="cordova.plugin.CpaySDK" />
+            </feature>
+        </config-file>
+        <lib-file src="src/android/CpaySDKLib_V1.0_20210421.jar" />
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/cpay-sdk.java" target-dir="src/com/morozenkomv/cordova/CpaySDK" />
+    </platform>
+</plugin>
