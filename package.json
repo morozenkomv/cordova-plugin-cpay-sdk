@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-cpay-sdk",
+  "version": "0.1.1",
+  "description": "Cordova plugin for Cpay SDK",
+  "cordova": {
+    "id": "cordova-plugin-cpay-sdk",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morozenkomv/cordova-plugin-cpay-sdk.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Maks Morozenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morozenkomv/cordova-plugin-cpay-sdk/issues"
+  },
+  "homepage": "https://github.com/morozenkomv/cordova-plugin-cpay-sdk#readme"
+}
